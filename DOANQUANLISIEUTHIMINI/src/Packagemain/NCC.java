@@ -15,7 +15,15 @@ public class NCC extends Person{
     public NCC() {
     }
     public void nhap(){
-        System.out.println("Mời nhập:");
+        System.out.println("Nhập mã NCC: ");this.maNCC=tool.inp.nextLine();
+        System.out.println("Tên nhà cung cấp: "); this.TenNCC=tool.inp.nextLine();
+        System.out.println("Tên người đại diện: "); this.Name=tool.inp.nextLine();
+        System.out.println("Số điện thoại: "); this.SDT=tool.inp.nextLine();
+        System.out.println("Email: "); this.email=tool.inp.nextLine();
+        System.out.println("Địa chỉ: "); this.Address=tool.inp.nextLine();
+    }
+    public void xuat(){
+        System.out.println(String.format("%-5s%-30s%-30s%-15s%-30s%-30s",this.maNCC,this.TenNCC,this.Name,this.SDT,this.email,this.Address));
     }
     
 }
