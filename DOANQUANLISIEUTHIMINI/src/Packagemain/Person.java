@@ -103,4 +103,12 @@ public abstract class Person {
         System.out.println(a.toBString());
     }
 
+    public String getSDT() {
+        return SDT;
+    }
+
+    public void setSDT(String sDT) {
+        SDT = sDT;
+    }
+
 }
